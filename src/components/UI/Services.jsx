@@ -1,6 +1,32 @@
 import React from 'react';
 import '../../styles/services.css';
 
+const serviceData = [
+  {
+    icon: 'ri-apps-line',
+    title: 'App Development',
+    desc: 'Lorem, ipsum dolor sit amet elit. excepturi molestias nesciunt minus dicta! Libero mollitia architecto dolorem repellat!',
+  },
+
+  {
+    icon: 'ri-code-s-slash-line',
+    title: 'Web Design',
+    desc: 'Lorem, ipsum dolor sit amet elit. excepturi molestias nesciunt minus dicta! Libero mollitia architecto dolorem repellat!',
+  },
+
+  {
+    icon: 'ri-landscape-line',
+    title: 'Graphic Design',
+    desc: 'Lorem, ipsum dolor sit amet elit. excepturi molestias nesciunt minus dicta! Libero mollitia architecto dolorem repellat!',
+  },
+
+  {
+    icon: 'ri-rocket-line',
+    title: 'Digital Marketing',
+    desc: 'Lorem, ipsum dolor sit amet elit. excepturi molestias nesciunt minus dicta! Libero mollitia architecto dolorem repellat!',
+  },
+];
+
 const Services = () => {
   return (
     <section id="service">
@@ -12,17 +38,15 @@ const Services = () => {
         </div>
 
         <div className="service__item-wrapper">
-          <div className="service__item">
-            <span className="service__icon">
-              <i class="ri-apps-line"></i>
-            </span>
-            <h3 className="service__title">App Development</h3>
-            <p className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              veritatis saepe cum ullam accusantium perspiciatis sequi quibusdam
-              corporis
-            </p>
-          </div>
+          {serviceData.map((item, index) => (
+            <div className="service__item" key={index}>
+              <span className="service__icon">
+                <i class={item.icon}></i>
+              </span>
+              <h3 className="service__title">{item.title}</h3>
+              <p className="description">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
