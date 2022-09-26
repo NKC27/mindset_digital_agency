@@ -59,6 +59,7 @@
 
   .service__item-wrapper {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .service__item {

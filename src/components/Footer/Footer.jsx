@@ -52,7 +52,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__logo">
-            <h2>Clarke Development</h2>
+            <h2>MindSet</h2>
             <p className="description">Grow with us</p>
             <p className="small__text description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.

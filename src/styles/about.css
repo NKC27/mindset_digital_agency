@@ -71,4 +71,12 @@
   .about__img {
     width: 100%;
   }
+
+  .about__img {
+    height: 400px;
+  }
+
+  .about__content {
+    margin-bottom: 30px;
+  }
 }
