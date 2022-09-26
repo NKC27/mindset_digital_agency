@@ -28,7 +28,7 @@ const About = () => {
         <div className="about__wrapper">
           <div className="about__content">
             <h6 className="subtitle">Why choose us</h6>
-            <h2>Specialist in aiding clients on</h2>
+            <h2>Specialists in application development</h2>
             <h3 className="highlight">financial challenges</h3>
             <p className="description about__content-desc">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
